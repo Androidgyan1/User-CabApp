@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Trips">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#F1C40F"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Trips"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ImageView
+        android:id="@+id/childImg"
+        android:layout_width="100dp"
+        android:padding="1dp"
+        android:src="@drawable/sedan"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerVertical="true"
+        android:layout_height="90dp"/>
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="70dp"
+        android:padding="1dp"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/childImg"
+        android:layout_centerVertical="true"
+        android:layout_height="70dp"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/toolbar"
+        android:layout_toRightOf="@+id/childImg"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/childTv"
+            android:layout_toRightOf="@+id/childImg"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Tue,Jul 24,06:30 Pm"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/childpics"
+            android:layout_toRightOf="@+id/childImg"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#F1C40F"
+            android:layout_marginLeft="2dp"
+            android:text="Sedan 2001"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:id="@+id/carno"
+            android:layout_toRightOf="@+id/childImg"
+            android:textSize="15dp"
+            android:layout_marginTop="56dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="2dp"
+            android:text="MH 20 E3456"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/childprice"
+            android:layout_toRightOf="@+id/childImg"
+            android:textSize="18dp"
+            android:layout_marginTop="80dp"
+            android:textColor="#000"
+            android:text="Shudama Nagar "
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_toRightOf="@+id/childImg"
+            android:textSize="18dp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:textColor="#F1C40F"
+            android:text="₹ 225"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="120dp"></Button>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="Hanuman Mandir"></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textColor="#2ECC71"
+            android:text="Completed"></TextView>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

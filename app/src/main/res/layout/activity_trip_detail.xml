@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar1"
+            android:layout_height="wrap_content"
+            android:background="#F1C40F">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_button"></ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="   Tue, Jul 24, 06:30 Pm\n   MH 20 E3456"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/map"
+            android:layout_below="@id/toolbar1"
+            android:layout_height="200dp"
+            android:src="@drawable/map"
+            android:scaleType="fitXY"></ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/card1"
+            android:layout_height="80dp"
+            android:layout_below="@id/map">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/driver"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/driver"></ImageView>
+
+
+                <RatingBar
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="12dp"
+                    android:rating="3"
+                    android:layout_toRightOf="@id/driver"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"></RatingBar>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card1"
+            android:background="#ECF0F1"></View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/card2"
+            android:layout_height="80dp"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/car"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sedan"></ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/car"
+                android:text="Seden 2001"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content"></TextView>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card2"
+            android:background="#ECF0F1"></View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/card3"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/payment"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_payment"></ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/payment"
+                    android:text="$ 235"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content"></TextView>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view3"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card3"
+            android:background="#ECF0F1"></View>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/card4"
+            android:layout_below="@id/card3"
+            android:layout_marginTop="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/firsttime"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="12dp"
+                    android:text="06:22 Pm"></TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/firsttime2"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/firsttime"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:text="06:38 Pm"></TextView>
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/inerviewlocation1"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_baseline_location_on_24"
+                    android:layout_toRightOf="@id/firsttime"></View>
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/inerviewlocation1"
+                    android:id="@+id/inerviewline"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_baseline_location_on_24"
+                    android:layout_toRightOf="@id/firsttime2"></View>
+
+
+                <TextView
+                    android:id="@+id/firstlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firsttime"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="-21dp"
+                    android:layout_toRightOf="@id/inerviewlocation1"
+                    android:text="Sudhma Nagar "
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"></TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view4"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card4"
+            android:background="#ECF0F1"></View>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/card5"
+            android:layout_below="@id/card4"
+            android:layout_marginTop="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/onewaytrip"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="12dp"
+                    android:text="Trip"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@id/onewaytrip"
+                    android:text="One Way Trip"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"></TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view5"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card5"
+            android:background="#ECF0F1"></View>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/card6"
+            android:layout_below="@id/card5"
+            android:layout_marginTop="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/startkms"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="12dp"
+                    android:text="Start Ride"></TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/Endkms"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/startkms"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:text="Start Ride"></TextView>
+
+
+                <TextView
+                    android:id="@+id/startkmsmeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@id/startkms"
+                    android:text="2.5 Km"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/endkms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@id/Endkms"
+                    android:text="9.5 Km"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/startkmsmeter"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"></TextView>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view6"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card6"
+            android:background="#ECF0F1"></View>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card7"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/view6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/billdetail"
+                android:layout_marginLeft="20dp"
+                android:text="Bill Details-"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ridefare"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/billdetail"
+                android:layout_marginLeft="16dp"
+                android:text="Ride Fare-"
+                android:textSize="18sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ridefaremoney"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/billdetail"
+                    android:text="$ 220"
+                    android:textSize="18sp"></TextView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalaccessfee"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/ridefare"
+                    android:layout_marginLeft="16dp"
+                    android:text="Total Access Fare"
+                    android:textSize="18sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/accessmoney"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ridefaremoney"
+                    android:text="$ 15"
+                    android:textSize="18sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/totalaccessfee"
+                    android:layout_marginLeft="16dp"
+                    android:text="Total"
+                    android:textSize="20sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalmoney"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/accessmoney"
+                    android:text="$ 235"
+                    android:textSize="20sp"></TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view7"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/card7"
+            android:background="#B3B6B7"></View>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/card8"
+            android:layout_below="@id/card7"
+            android:layout_marginTop="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/paymenttotal"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="12dp"
+                    android:text="Start Ride"></TextView>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/paymentmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@id/paymenttotal"
+                    android:text="2.5 Km"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"></TextView>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
