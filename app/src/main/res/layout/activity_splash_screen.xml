@@ -24,6 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:text="Capp App"
+            android:fontFamily="@font/light"
             android:textStyle="bold"
             android:textColor="#F1C40F"
             android:layout_marginTop="18dp"

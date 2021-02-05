@@ -24,6 +24,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="WELCOME"
+    android:fontFamily="@font/light"
     android:gravity="center"
     android:textSize="30sp"
     android:textColor="@android:color/black"></TextView>
