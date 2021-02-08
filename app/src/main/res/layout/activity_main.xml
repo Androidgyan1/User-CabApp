@@ -1,490 +1,567 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <RelativeLayout
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/map"></ImageView>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            app:cardCornerRadius="6dp"
-            android:layout_height="match_parent">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    android:orientation="vertical"
-    android:layout_marginTop="250dp"
-    android:layout_marginRight="3dp"
-    android:layout_marginLeft="3dp">
-
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="100dp"
-            app:cardElevation="5dp"
-            app:cardCornerRadius="4dp"
-            app:cardBackgroundColor="@android:color/white">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_auto_ricksaw"
-                    android:layout_gravity="center"></ImageView>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:layout_marginTop="4dp"
-                    android:gravity="center"
-                    android:id="@+id/autotxt"
-                    android:textColor="#F1C40F"
-                    android:text="Auto - 1 min"></TextView>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:textColor="@android:color/black"
-                    android:text="₹ 65"></TextView>
-
-
-
-
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="100dp"
-            app:cardElevation="5dp"
-            android:layout_marginLeft="5dp"
-            app:cardCornerRadius="4dp"
-            app:cardBackgroundColor="@android:color/white">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_mini_cab"
-                    android:layout_gravity="center"></ImageView>
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:layout_marginTop="4dp"
-                        android:gravity="center"
-                        android:id="@+id/minicab"
-                        android:textColor="#F1C40F"
-                        android:text="MINI - 1 min"></TextView>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:textColor="@android:color/black"
-                    android:text="₹ 65"></TextView>
-
-
-
-
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="100dp"
-            app:cardElevation="5dp"
-            android:layout_marginLeft="5dp"
-            app:cardCornerRadius="4dp"
-            app:cardBackgroundColor="@android:color/white">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_comfort"
-                    android:layout_gravity="center"></ImageView>
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:layout_marginTop="4dp"
-                        android:gravity="center"
-                        android:id="@+id/comfert"
-                        android:textColor="#F1C40F"
-                        android:text="Comfert - 9 min"></TextView>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:textColor="@android:color/black"
-                    android:text="₹ 115"></TextView>
-
-
-
-
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-    </LinearLayout>
-
-
-    </HorizontalScrollView>
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:orientation="vertical" >
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:textColor="@android:color/white"
-            android:layoutDirection="rtl"
-            android:background="#F1C40F"
-            android:textAlignment="textStart"
-            android:layout_gravity="start"
-            android:text="One Way"
-            android:textSize="20sp" />
-
-
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp">
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="5dp"
-            android:outlineSpotShadowColor="@android:color/black"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="4dp"
-            android:layout_height="50dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
             android:layout_height="match_parent"
-            android:id="@+id/Birthday"
-            android:textAlignment="center"
-            android:background="@android:color/white"
-            android:textColor="@android:color/darker_gray"
-            android:clickable="true"
-            android:editable="false"
-            android:hint="Date"></EditText>
+            android:orientation="vertical">
 
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
-            android:outlineSpotShadowColor="@android:color/black"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="4dp"
-            android:layout_height="50dp">
-
-            <EditText
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_baseline_access_time_24"
-                android:layout_height="match_parent"
-                android:id="@+id/time"
-                android:textAlignment="center"
-                android:background="@android:color/white"
-                android:textColor="@android:color/darker_gray"
-                android:clickable="true"
-                android:editable="false"
-                android:hint="Time"></EditText>
+                android:layout_height="wrap_content">
 
-        </androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
 
-    </LinearLayout>
 
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:background="#F1C40F"
-            android:textColor="@android:color/white"
-            android:layoutDirection="rtl"
-            android:textAlignment="textStart"
-            android:layout_gravity="start"
-            android:text="Two Way"
-            android:textSize="20sp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:drawableStart="@drawable/ic_baseline_adjust_24"
+                        android:backgroundTint="@android:color/white"
+                        android:id="@+id/source"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/search_bg"
+                        android:layout_height="50dp"
+                        android:hint="    Search for an address"></EditText>
 
 
-    </RadioGroup>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:drawableStart="@drawable/ic_baseline_adjust_24blue"
+                        android:backgroundTint="@android:color/white"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/search_bg"
+                        android:layout_height="50dp"
+                        android:hint="    Search for an Destination"></EditText>
+
+
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_access_alarm_24"></ImageView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:text="Now"></TextView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="250dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp">
+
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    app:cardElevation="5dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardBackgroundColor="@android:color/white">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_marginTop="4dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/ic_auto_ricksaw"
+                                            android:layout_gravity="center"></ImageView>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="15sp"
+                                            android:layout_marginTop="4dp"
+                                            android:gravity="center"
+                                            android:id="@+id/autotxt"
+                                            android:textColor="#F1C40F"
+                                            android:text="Auto - 1 min"></TextView>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="16sp"
+                                            android:gravity="center"
+                                            android:layout_marginTop="8dp"
+                                            android:textColor="@android:color/black"
+                                            android:text="₹ 65"></TextView>
+
+
+
+
+
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    app:cardElevation="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardBackgroundColor="@android:color/white">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_marginTop="4dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/ic_mini_cab"
+                                            android:layout_gravity="center"></ImageView>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="15sp"
+                                            android:layout_marginTop="4dp"
+                                            android:gravity="center"
+                                            android:id="@+id/minicab"
+                                            android:textColor="#F1C40F"
+                                            android:text="MINI - 1 min"></TextView>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="16sp"
+                                            android:gravity="center"
+                                            android:layout_marginTop="8dp"
+                                            android:textColor="@android:color/black"
+                                            android:text="₹ 65"></TextView>
+
+
+
+
+
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="130dp"
+                                    android:layout_height="100dp"
+                                    app:cardElevation="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardBackgroundColor="@android:color/white">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_marginTop="4dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/ic_comfort"
+                                            android:layout_gravity="center"></ImageView>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="15sp"
+                                            android:layout_marginTop="4dp"
+                                            android:gravity="center"
+                                            android:id="@+id/comfert"
+                                            android:textColor="#F1C40F"
+                                            android:text="Comfert - 9 min"></TextView>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="16sp"
+                                            android:gravity="center"
+                                            android:layout_marginTop="8dp"
+                                            android:textColor="@android:color/black"
+                                            android:text="₹ 115"></TextView>
+
+
+
+
+
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:textColor="@android:color/white"
+                                android:layoutDirection="rtl"
+                                android:background="#F1C40F"
+                                android:textAlignment="textStart"
+                                android:layout_gravity="start"
+                                android:text="One Way"
+                                android:textSize="20sp" />
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="12dp">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="170dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:outlineSpotShadowColor="@android:color/black"
+                                    app:cardElevation="2dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_height="50dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/Birthday"
+                                        android:textAlignment="center"
+                                        android:background="@android:color/white"
+                                        android:textColor="@android:color/darker_gray"
+                                        android:clickable="true"
+                                        android:editable="false"
+                                        android:hint="Date"></EditText>
+
+                                </androidx.cardview.widget.CardView>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="170dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:outlineSpotShadowColor="@android:color/black"
+                                    app:cardElevation="2dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_height="50dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/time"
+                                        android:textAlignment="center"
+                                        android:background="@android:color/white"
+                                        android:textColor="@android:color/darker_gray"
+                                        android:clickable="true"
+                                        android:editable="false"
+                                        android:hint="Time"></EditText>
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:background="#F1C40F"
+                                android:textColor="@android:color/white"
+                                android:layoutDirection="rtl"
+                                android:textAlignment="textStart"
+                                android:layout_gravity="start"
+                                android:text="Two Way"
+                                android:textSize="20sp" />
+
+
+                        </RadioGroup>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_marginRight="5dp"
+                                android:outlineSpotShadowColor="@android:color/black"
+                                app:cardElevation="2dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_height="50dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/date"
+                                    android:textAlignment="center"
+                                    android:background="@android:color/white"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:hint="Date"></EditText>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_marginLeft="5dp"
+                                android:outlineSpotShadowColor="@android:color/black"
+                                app:cardElevation="2dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_height="50dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/timetwo"
+                                    android:textAlignment="center"
+                                    android:background="@android:color/white"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:hint="Time"></EditText>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_marginRight="5dp"
+                                android:outlineSpotShadowColor="@android:color/black"
+                                app:cardElevation="2dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_height="50dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/datetwoway"
+                                    android:textAlignment="center"
+                                    android:background="@android:color/white"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:hint="Date"></EditText>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_marginLeft="5dp"
+                                android:outlineSpotShadowColor="@android:color/black"
+                                app:cardElevation="2dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_height="50dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/timetwoway"
+                                    android:textAlignment="center"
+                                    android:background="@android:color/white"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:hint="Time"></EditText>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="2dp">
+
+
+
+                            <Button
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@android:color/black"
+                                android:background="@android:color/white"
+                                android:drawableLeft="@drawable/ic_payment_mode"
+                                android:text="Payment Mode"></Button>
+
+
+                            <Button
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@android:color/black"
+                                android:background="@android:color/white"
+                                android:drawableLeft="@drawable/ic_coupon"
+                                android:text="Apply Coupen"></Button>
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="4dp"
+                            android:background="#F1C40F"
+                            android:textColor="@android:color/white"
+                            android:layout_height="wrap_content"
+                            android:text="Confirm Ride"></Button>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+            </ScrollView>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp">
+        android:layout_height="250dp"
+        android:clipToPadding="true"
+        android:orientation="vertical">
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_marginRight="5dp"
-            android:outlineSpotShadowColor="@android:color/black"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="4dp"
-            android:layout_height="50dp">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
-                android:layout_height="match_parent"
-                android:id="@+id/date"
-                android:textAlignment="center"
-                android:background="@android:color/white"
-                android:textColor="@android:color/darker_gray"
-                android:clickable="true"
-                android:editable="false"
-                android:hint="Date"></EditText>
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_marginLeft="5dp"
-            android:outlineSpotShadowColor="@android:color/black"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="4dp"
-            android:layout_height="50dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_baseline_access_time_24"
-                android:layout_height="match_parent"
-                android:id="@+id/timetwo"
-                android:textAlignment="center"
-                android:background="@android:color/white"
-                android:textColor="@android:color/darker_gray"
-                android:clickable="true"
-                android:editable="false"
-                android:hint="Time"></EditText>
-
-        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="2dp">
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_marginRight="5dp"
-            android:outlineSpotShadowColor="@android:color/black"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="4dp"
-            android:layout_height="50dp">
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
-                android:layout_height="match_parent"
-                android:id="@+id/datetwoway"
-                android:textAlignment="center"
-                android:background="@android:color/white"
-                android:textColor="@android:color/darker_gray"
-                android:clickable="true"
-                android:editable="false"
-                android:hint="Date"></EditText>
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_marginLeft="5dp"
-            android:outlineSpotShadowColor="@android:color/black"
-            app:cardElevation="2dp"
-            app:cardCornerRadius="4dp"
-            android:layout_height="50dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_baseline_access_time_24"
-                android:layout_height="match_parent"
-                android:id="@+id/timetwoway"
-                android:textAlignment="center"
-                android:background="@android:color/white"
-                android:textColor="@android:color/darker_gray"
-                android:clickable="true"
-                android:editable="false"
-                android:hint="Time"></EditText>
-
-        </androidx.cardview.widget.CardView>
-
-
-    </LinearLayout>
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:layout_marginTop="2dp">
-
-
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:textColor="@android:color/black"
-        android:background="@android:color/white"
-        android:drawableLeft="@drawable/ic_payment_mode"
-        android:text="Payment Mode"></Button>
-
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:textColor="@android:color/black"
-        android:background="@android:color/white"
-        android:drawableLeft="@drawable/ic_coupon"
-        android:text="Apply Coupen"></Button>
-
-
-
-
-
-
-</LinearLayout>
-
-
-
-
-
-
-
-<Button
-    android:layout_width="match_parent"
-    android:layout_marginTop="4dp"
-    android:background="#F1C40F"
-    android:textColor="@android:color/white"
-    android:layout_height="wrap_content"
-    android:text="Confirm Ride"></Button>
-
-</LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
-
-    </RelativeLayout>
-
-
-
-</ScrollView>
-
-
-
-
-
-
-
-
-
-</RelativeLayout>
